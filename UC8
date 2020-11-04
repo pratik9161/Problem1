@@ -1,0 +1,22 @@
+#/bin/bash -x
+
+declare -a Num1
+
+echo "Enter Number 1: "
+read a
+
+echo "Enter Number 2: "
+read b
+
+echo "Enter Number 3: "
+read c
+
+result = $(($a%$b))+$c));
+echo $result;
+
+Num1 = ($a $b $c)
+echo "num1-" ${Num1[@]}
+
+sort -n <(printf "%s\n" "${Num1[@]}")
+
+
