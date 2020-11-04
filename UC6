@@ -1,0 +1,24 @@
+#/bin/bash -x
+
+declare -A dictionaryVar
+
+echo "Enter Number 1: "
+read a
+
+echo "Enter Number 2: "
+read b
+
+echo "Enter Number 3: "
+read c
+
+result = $(($a%$b))+$c));
+echo $result;
+
+dictionaryVar[a] = $a
+
+dictionaryVar[b] = $b
+
+dictionaryVar[c] = $c
+
+echo "dictionaryVar - " ${dictionaryVar[@]}
+
